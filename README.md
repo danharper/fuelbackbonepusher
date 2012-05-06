@@ -10,3 +10,13 @@ An example application demoing [Pusher](http://pusher.com) a realtime web API wi
 * FuelPHP then pushes the message out to all connected clients using Pusher. Each client then adds the new message to their list
 
 Using the [FuelPHP Pusher package](https://github.com/lembubintik/pusherapp).
+
+Notable files include:
+
+* [Index Controller](https://github.com/danharper/fuelbackbonepusher/blob/master/fuel/app/classes/controller/site.php)
+* [Index View](https://github.com/danharper/fuelbackbonepusher/blob/master/fuel/app/views/site/index.php)
+* [Messages API Controller](https://github.com/danharper/fuelbackbonepusher/blob/master/fuel/app/classes/controller/api/messages.php)
+* [Message Model](https://github.com/danharper/fuelbackbonepusher/blob/master/fuel/app/classes/model/message.php)
+* [Message Observer -> Pusher](https://github.com/danharper/fuelbackbonepusher/blob/master/fuel/app/classes/observer/message/created.php)
+
+* [Client-Side](https://github.com/danharper/fuelbackbonepusher/blob/master/public/assets/js/app.js)
