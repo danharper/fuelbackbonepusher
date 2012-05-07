@@ -14,6 +14,9 @@ class Controller_API_Messages extends Controller_API
 		$data = json_decode(Input::post('model'), true);
 		Log::debug(print_r($data, true), 'POST');
 
+		if ( ! $data['name'] || ! $data['text'])
+			return $this->response(array('message' => 'Name and Message should be provided.'), 400);
+
 		$params = array(
 			'name' => $data['name'],
 			'text' => $data['text'],
