@@ -1,4 +1,4 @@
-# fuelbackbonepusher
+# Pusher, FuelPHP & Backbone.js Example Application
 
 Demo of FuelPHP, Backbone.js and Pusher. Demo at http://fuelbbpusher.phpfogapp.com/.
 
