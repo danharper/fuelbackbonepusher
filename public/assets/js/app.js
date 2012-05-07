@@ -10,6 +10,13 @@ $(function() {
 				url += '/'+this.id;
 			}
 			return url;
+		},
+
+		validate: function (attrs) {
+			if ( ! $.trim(attrs.name))
+				return { message: 'Name is required.' };
+			if ( ! $.trim(attrs.text))
+				return { message: 'Message is required.' };
 		}
 	});
 
@@ -64,8 +71,9 @@ $(function() {
 					self.render();
 				},
 				error: function(model, response) {
+					console.log('error', model, response);
 					try {
-						var json = $.parseJSON(response.responseText);
+						var json = $.parseJSON(response.responseText) || response;
 						if ('message' in json) {
 							alert(json.message);
 							return;
