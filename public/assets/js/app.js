@@ -133,7 +133,7 @@ $(function() {
 
 
 	// Pusher
-	var pusher = new Pusher('a09459a9d691445e3e1f');
+	var pusher = new Pusher('b54e55afad8e55e83760');
 	var channel = pusher.subscribe('fuelbbpusher');
 	channel.bind('new_message', function(data) {
 		app.messages.add(data);
