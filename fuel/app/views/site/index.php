@@ -42,6 +42,7 @@
 	</script>
 
 	<script type="text/x-handlebars-template" id="template-list">
+		<p>Open another browser window to see messages you write be pushed down to you.</p>
 		{{#if collection}}
 			<ul>
 				{{#each collection}}
