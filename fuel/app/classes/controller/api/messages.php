@@ -12,9 +12,9 @@ class Controller_API_Messages extends Controller_API
 	public function post_index()
 	{
 		$data = json_decode(Input::post('model'), true);
-		Log::debug(print_r($data, true), 'POST');
+		// Log::debug(print_r($data, true), 'POST');
 
-		if ( ! $data['name'] || ! $data['text'])
+		if ( ! trim($data['name']) || ! trim($data['text']))
 			return $this->response(array('message' => 'Name and Message should be provided.'), 400);
 
 		$params = array(
