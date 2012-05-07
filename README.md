@@ -2,7 +2,7 @@
 
 Demo of FuelPHP, Backbone.js and Pusher. Demo at http://fuelbbpusher.phpfogapp.com/.
 
-![Preview Image](http://i.imgur.com/rVcV3.png)
+![Preview Image](http://i.imgur.com/MKyRL.png)
 
 An example application demoing [Pusher](http://pusher.com) a realtime web API with [FuelPHP](http://fuelphp.com) on the server and [Backbone.js](http://backbonejs.org) on the client.
 
