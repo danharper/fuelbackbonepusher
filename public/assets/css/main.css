@@ -1,0 +1,70 @@
+body {
+	background-color: #323f66;
+	color: #fff;
+}
+
+h1, h2, legend {
+	color: #47d3ff;
+	text-shadow: 0 4px 5px #383456;
+	font-family: 'Fredoka One', sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+hgroup {
+	margin: 20px 0;
+}
+
+h1 {
+	font-size: 42px;
+	margin-bottom: 0;
+}
+
+hgroup p {
+	color: white;
+	font-size: 11px;
+	margin: 5px 0 0;
+	text-align: center;
+}
+
+hgroup p a,
+hgroup p a:hover {
+	color: white;
+}
+
+form {
+	margin: 0;
+}
+
+legend {
+	border: none;
+}
+
+h2, legend {
+	font-size: 22px;
+	line-height: 1.4em;
+	padding-bottom: 5px;
+}
+
+#form-shell, #list-shell {
+	background: #3f4c73;
+	border: 1px solid #2d395c;
+	border-radius: 3px;
+	margin: 0 0 20px;
+	padding: 20px;
+}
+
+input, textarea {
+	background: #313d60;
+	border: 1px solid #2d395c;
+	color: #fff;
+	width: 100% !important;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+.info {
+	text-align: center;
+}

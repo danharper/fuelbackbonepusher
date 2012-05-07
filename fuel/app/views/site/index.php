@@ -12,6 +12,7 @@
 
 	<?php
 	echo Asset::css(array(
+		'http://fonts.googleapis.com/css?family=Fredoka+One',
 		'bootstrap.css',
 		'main.css',
 	));
@@ -29,20 +30,19 @@
 	<script type="text/x-handlebars-template" id="template-form">
 		<form id="new-list-item">
 			<fieldset>
-				<legend>Add Message</legend>
+				<legend>Shout!</legend>
 				<p>
 					<input placeholder="Your Name" class="span4" id="new-name" autofocus required>
 					<textarea placeholder="Your Message" class="span4" id="new-text" required></textarea>
 				</p>
 			</fieldset>
-			<div class="form-actions">
 				<button type="submit" class="btn btn-primary">Submit</button>
-			</div>
 		</form>
 	</script>
 
 	<script type="text/x-handlebars-template" id="template-list">
-		<p class="alert alert-info">Open another browser window to see messages you write be pushed down to you.</p>
+		<h2>Live Shouts</h2>
+		<p class="info">Open another browser window to see messages you write be pushed down to you.</p>
 		{{#if collection}}
 			<ul>
 				{{#each collection}}
@@ -61,15 +61,20 @@
 
 	<div class="container">
 
-		<h1>Welcome!</h1>
+		<hgroup>
+			<h1>Shoutbox</h1>
+			<p><a href="http://danharper.me">Dan Harper</a> for <a href="http://net.tutsplus.com">Nettuts+</a></p>
+		</hgroup>
 
 		<div class="row">
-			<div class="span4" id="form-shell">
-				<p>Form.</p>
-			</div>
+			<div class="span12">
+				<div id="form-shell">
+					<p>Form.</p>
+				</div>
 
-			<div class="span8" id="list-shell">
-				<p>Messages.</p>
+				<div id="list-shell">
+					<p>Messages.</p>
+				</div>
 			</div>
 		</div>
 
